@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>� Hanami & Philip's HTML Feature Showcase �</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            padding: 2rem;
+            margin: 0;
+        }
+        .gallery-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        .element-label {
+            font-weight: bold;
+            color: #6366f1;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 🎪 Welcome to the HTML Element Circus! 🎪 -->
+    <header>
+        <h1>🏗️ HTML Elements Playground 🏗️</h1>
+        <p>✨ Hover over element names to discover their Baseline stories! ✨</p>
+    </header>
+
+    <section class="gallery-section">
+        <div class="element-label">🎨 The Artist's Canvas</div>
+        <!-- Hover over 'canvas' to see its magical baseline story! -->
+        <canvas id="magicalCanvas" width="400" height="200" style="border: 2px solid #ff6b6b; border-radius: 10px;"></canvas>
+        <p><em>Where pixel dreams come to life! ✨</em></p>
+    </section>
+    
+    <section class="gallery-section">
+        <div class="element-label">🎬 The Movie Theater</div>
+        <!-- Hover over 'video' to learn about moving pictures! -->
+        <video controls style="border-radius: 10px; max-width: 100%;">
+            <source src="magical-movie.mp4" type="video/mp4">
+            <p>🎭 Your browser is still learning this magic trick!</p>
+        </video>
+        <p><em>Stories told in moving pictures! 🎞️</em></p>
+    </section>
+    
+    <!-- 🎈 FRESH FEATURES - Popover API -->
+    <section class="gallery-section">
+        <div class="element-label">🎈 Native Popover Magic</div>
+        <!-- Hover over 'popover' to see declarative tooltips! -->
+        <button popovertarget="my-popover" style="padding: 1rem; font-size: 1.2rem;">
+            Show Popover 🎈
+        </button>
+        
+        <div popover="auto" id="my-popover" style="background: white; color: black; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+            <h3>✨ I'm a native popover!</h3>
+            <p>No JavaScript libraries needed! Built-in positioning, light-dismiss, and focus management!</p>
+            <button popovertarget="my-popover" popovertargetaction="hide">Close</button>
+        </div>
+        <p><em>Zero-JS tooltips and dropdowns! 🎯</em></p>
+    </section>
+
+    <!-- 🎭 STABLE & POWERFUL - Dialog Element -->
+    <section class="gallery-section">
+        <div class="element-label">🎭 Native Modal Dialogs</div>
+        <!-- Hover over 'dialog' to see accessible modals! -->
+        <button onclick="document.getElementById('demo-dialog').showModal()" style="padding: 1rem; font-size: 1.2rem;">
+            Open Modal Dialog 🎭
+        </button>
+        
+        <dialog id="demo-dialog" style="border-radius: 15px; border: none; padding: 2rem; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+            <form method="dialog">
+                <h3>🎪 Native Modal Magic!</h3>
+                <p>Built-in focus trapping, ESC handling, backdrop clicks!</p>
+                <p>Accessibility champions rejoice! ♿</p>
+                <div style="text-align: right; margin-top: 1rem;">
+                    <button value="cancel">Cancel</button>
+                    <button value="confirm" autofocus style="background: #667eea; color: white; border: none; padding: 0.5rem 1rem; border-radius: 5px; margin-left: 0.5rem;">Confirm ✨</button>
+                </div>
+            </form>
+        </dialog>
+        <p><em>Modals with built-in accessibility! 🎪</em></p>
+    </section>
+
+    <!-- 🚫 USEFUL FEATURE - Inert Attribute -->
+    <section class="gallery-section">
+        <div class="element-label">🚫 Inert Magic</div>
+        <!-- Hover over 'inert' to see interaction control! -->
+        <button onclick="toggleInert()" style="padding: 1rem; font-size: 1.2rem;">
+            Toggle Inert State 🚫
+        </button>
+        
+        <div id="inert-demo" style="margin-top: 1rem; padding: 1rem; border: 2px dashed #ccc; transition: opacity 0.3s;">
+            <h4>Interactive Content 🎯</h4>
+            <button>Clickable Button</button>
+            <input type="text" placeholder="Focusable input" style="margin: 0 0.5rem;">
+            <a href="#" onclick="alert('Link clicked!')">Clickable Link</a>
+        </div>
+        <p><em>Remove from accessibility tree and interactions! 🎭</em></p>
+    </section>
+    
+    <section class="gallery-section">
+        <div class="element-label">📸 The Shapeshifting Image</div>
+        <!-- Hover over 'picture' to see responsive image magic! -->
+        <picture>
+            <source media="(min-width: 650px)" srcset="large-magic.jpg">
+            <source media="(min-width: 465px)" srcset="medium-magic.jpg">
+            <img src="small-magic.jpg" alt="✨ A magical responsive image that changes with your screen! ✨" style="border-radius: 10px; max-width: 100%;">
+        </picture>
+        <p><em>Always the perfect size, like magic! 📐</em></p>
+    </section>
+    
+    <section class="gallery-section">
+        <div class="element-label">🎛️ The Interactive Playground</div>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+            <div>
+                <label for="colorPicker">🌈 Pick your magic color:</label>
+                <input type="color" id="colorPicker" value="#ff6b6b">
+            </div>
+            <div>
+                <label for="datePicker">📅 Choose your magical date:</label>
+                <input type="date" id="datePicker">
+            </div>
+            <div>
+                <label for="rangePicker">🎚️ Adjust the magic level:</label>
+                <input type="range" id="rangePicker" min="0" max="100" value="75">
+            </div>
+        </div>
+        <p><em>Interactive elements that respond to your touch! 🖱️</em></p>
+    </section>
+
+    <!-- 🎪 Hidden treasures section -->
+    <section class="gallery-section">
+        <div class="element-label">🆕 Fresh HTML Magic - Just Landed!</div>
+        
+        <!-- Hover over 'dialog' - native modals! -->
+        <dialog id="magicalDialog" style="border-radius: 10px; padding: 2rem; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+            <h3>🎭 Native Modal Magic!</h3>
+            <p>No JavaScript frameworks needed - this is pure HTML!</p>
+            <button onclick="this.closest('dialog').close()">✨ Close Magic</button>
+        </dialog>
+        <button onclick="document.getElementById('magicalDialog').showModal()">
+            🎪 Open Native Dialog
+        </button>
+        
+        <!-- Hover over 'popover' - tooltips without JS! -->
+        <button popovertarget="tooltip1">🔮 Hover for Future Magic</button>
+        <div id="tooltip1" popover>
+            ✨ This popover works without any JavaScript! 
+            The future of tooltips is here! (Chrome/Safari only for now)
+        </div>
+        
+        <p><em>⚠️ Fresh HTML features - some browsers still learning!</em></p>
+    </section>
+
+    <section class="gallery-section">
+        <div class="element-label">🔮 Experimental Elements - The Far Future!</div>
+        
+        <!-- Hover over 'selectlist' - the styleable select! -->
+        <!-- <selectlist> coming soon - finally, a select we can style!
+        <option>🎨 Red Magic</option>
+        <option>💙 Blue Dreams</option>
+        <option>💚 Green Growth</option>
+        </selectlist> -->
+        
+        <p>🚧 <code>&lt;selectlist&gt;</code> - OpenUI's gift to form designers</p>
+        <p><em>❌ Still in development - hover over 'selectlist' to learn more!</em></p>
+        
+        <div style="margin-top: 1rem;">
+            <!-- Hover over 'inert' - make content non-interactive! -->
+            <div inert style="opacity: 0.5; pointer-events: none;">
+                <button>🚫 This button is inert!</button>
+                <input type="text" placeholder="This input is ignored">
+            </div>
+            <p><em>⚠️ The 'inert' attribute - accessibility superpower!</em></p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="element-label">🔮 Secret HTML Elements (Hidden Treasures!)</div>
+        <details>
+            <summary>🎭 Click to reveal more magic!</summary>
+            <p>Sometimes the most powerful magic is hidden in plain sight!</p>
+            <progress value="75" max="100">75% magical!</progress>
+            
+            <!-- Hover over these modern input types! -->
+            <div style="margin-top: 1rem;">
+                <input type="color" value="#ff6b6b"> Color picker magic!<br>
+                <input type="range" min="0" max="100" value="75"> Range slider enchantment!<br>
+                <input type="date"> Date picker sorcery!<br>
+                <input type="search" placeholder="🔍 Search spells..."> Native search!
+            </div>
+        </details>
+    </section>
+
+    <footer style="text-align: center; margin-top: 2rem; opacity: 0.8;">
+        <p>🎨 Made with 💖 by Hanami Code & Philip 💖</p>
+        <p>✨ For the Baseline Tooling Hackathon ✨</p>
+        <p><small>🌟 Each element has a story - hover to hear them whisper! 🌟</small></p>
+    </footer>
+
+    <script>
+        // 🚫 Inert toggle function
+        function toggleInert() {
+            const demo = document.getElementById('inert-demo');
+            if (demo.hasAttribute('inert')) {
+                demo.removeAttribute('inert');
+                demo.style.opacity = '1';
+            } else {
+                demo.setAttribute('inert', '');
+                demo.style.opacity = '0.5';
+            }
+        }
+        
+        // 🎭 Dialog backdrop click handler
+        document.getElementById('demo-dialog').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) {
+                e.currentTarget.close();
+            }
+        });
+        
+        // 🎨 A little canvas magic for the curious!
+        const canvas = document.getElementById('magicalCanvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+        
+        // Draw some magical shapes ✨
+        ctx.fillStyle = '#ff6b6b';
+        ctx.fillRect(50, 50, 100, 100);
+        
+        ctx.fillStyle = '#4ecdc4';
+        ctx.beginPath();
+        ctx.arc(300, 100, 50, 0, 2 * Math.PI);
+        ctx.fill();
+        
+        ctx.fillStyle = '#45b7d1';
+        ctx.font = '20px Comic Sans MS';
+        ctx.fillText('✨ Magic! ✨', 150, 180);
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+{
+  "name": "crystal-line-base-ball",
+  "displayName": "Crystal-Line Base-Ball 🔮⚾",
+  "description": "🎯 Real-time Baseline compatibility detector for CSS, HTML & JavaScript features. Choose between gutter icons or text highlighting. Get architecture insights, browser support timelines, and pro developer tips with hover tooltips. Supports bleeding-edge experimental features to cutting-edge APIs. Perfect for teams building modern web applications who need to understand feature compatibility at a glance.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Other",
+    "Linters", 
+    "Formatters"
+  ],
+  "keywords": [
+    "baseline",
+    "web-features",
+    "compatibility",
+    "css",
+    "html",
+    "javascript", 
+    "browser-support",
+    "web-standards",
+    "developer-tools"
+  ],
+  "publisher": "hanami-philip",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanami-philip/crystal-line-base-ball"
+  },
+  "activationEvents": [
+    "onLanguage:css",
+    "onLanguage:scss", 
+    "onLanguage:less",
+    "onLanguage:html",
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "crystal-line-base-ball.helloWorld",
+        "title": "Crystal Ball: Activate Magic 🔮",
+        "category": "Crystal Ball"
+      },
+      {
+        "command": "crystal-line-base-ball.basicMode",
+        "title": "Crystal Ball: Basic Mode 🎨",
+        "category": "Crystal Ball"
+      },
+      {
+        "command": "crystal-line-base-ball.architectureMode",
+        "title": "Crystal Ball: Architecture Mode 🏗️",
+        "category": "Crystal Ball"
+      },
+      {
+        "command": "crystal-line-base-ball.supportMode",
+        "title": "Crystal Ball: Support Mode 🌐",
+        "category": "Crystal Ball"
+      },
+      {
+        "command": "crystal-line-base-ball.tipsMode",
+        "title": "Crystal Ball: Tips Mode 💡",
+        "category": "Crystal Ball"
+      },
+      {
+        "command": "crystal-line-base-ball.gutterMode",
+        "title": "Crystal Ball: Gutter Icons Mode 🎯",
+        "category": "Crystal Ball"
+      },
+      {
+        "command": "crystal-line-base-ball.textMode",
+        "title": "Crystal Ball: Text Decorations Mode 🎨",
+        "category": "Crystal Ball"
+      },
+      {
+        "command": "crystal-line-base-ball.bothMode",
+        "title": "Crystal Ball: Both Modes 🚀",
+        "category": "Crystal Ball"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.104.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.34.0",
+    "esbuild": "^0.25.9",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.9.2",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}

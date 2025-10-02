@@ -1,0 +1,109 @@
+/* 
+🎨🔮 Hanami & Philip's CSS Time Machine 🔮🎨
+Journey from today's web to tomorrow's magic!
+Hover over ANY property to see its compatibility timeline 📖✨
+*/
+
+/* � THE BLEEDING EDGE - Chrome's Secret Lab */
+.future-layout {
+  /* 🔥 Hover over 'anchor-positioning' - the layout revolution! */
+  position: anchor();
+  anchor-name: --my-anchor;
+  /* Chrome-only magic - positioning elements relative to others! */
+}
+
+.scroll-magic {
+  /* 🎢 Hover over 'scroll-driven-animations' - no JS needed! */
+  animation: scroll-fade linear;
+  animation-timeline: scroll();
+  /* Your scroll wheel controls the animation! Chrome Labs exclusive */
+}
+
+/* 🆕 FRESH FROM THE OVEN - Just Landed! */
+.parent-selector-magic {
+  /* � Hover over 'has' - the parent selector we dreamed of! */
+  &:has(.important-child) {
+    border: 2px solid gold;
+  }
+  /* Style parents based on their children - Firefox is catching up! */
+}
+
+.native-nesting {
+  /* 🪆 Hover over CSS nesting - SCSS is built-in now! */
+  color: blue;
+  
+  .nested-child {
+    color: red;
+    
+    &:hover {
+      color: purple;
+    }
+  }
+  /* No preprocessor needed - this is native CSS! */
+}
+
+.layer-control {
+  /* 📚 Hover over '@layer' - tame the cascade! */
+  @layer base, components, utilities;
+  
+  @layer components {
+    background: blue;
+  }
+  /* Finally, control over CSS order without specificity wars! */
+}
+
+/* 🔮 CONTAINER QUERY REVOLUTION */
+.container-aware {
+  container-type: inline-size;
+  /* 📐 Hover over 'container-query-units' - cqw, cqh magic! */
+  
+  .responsive-content {
+    font-size: 4cqw; /* Container query width unit! */
+    padding: 2cqh;   /* Container query height unit! */
+    /* Units that know their container's size, not the viewport! */
+  }
+}
+
+/* 🌍 GLOBAL WEB - Logical Properties */
+.international-friendly {
+  /* 🌍 Hover over 'logical-properties' - writing-mode aware! */
+  margin-inline-start: 1rem;  /* Start of reading direction */
+  padding-block-end: 2rem;    /* End of block direction */
+  border-inline: 1px solid;   /* Inline borders */
+  /* Works in RTL, vertical text, any writing mode! */
+}
+
+/* 🎯 CLASSIC COMPARISONS - The Reliable Friends */
+.grid-master {
+  /* ✅ Hover over 'grid' - the mature layout champion */
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.flex-dancer {
+  /* ✅ Hover over 'flexbox' - the flexible friend */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* � EXPERIMENTAL PLAYGROUND */
+.view-transition-demo {
+  /* 🎬 Hover over 'view-transitions' - smooth page changes! */
+  view-transition-name: hero-image;
+  /* Chrome-only magic for app-like transitions */
+}
+
+/* 
+� THE GRAND FINALE 
+Each property tells a story of web evolution:
+- ❌ Future experiments (Chrome Labs)
+- ⚠️ Fresh arrivals (limited support)  
+- ✅ Trusted friends (baseline ready)
+
+Made with 💖 by Hanami Code & Philip
+for developers building tomorrow's web today! 🚀
+*/
