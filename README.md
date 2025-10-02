@@ -160,3 +160,9 @@ Made with 🔮 and ⚾ for the modern web
 - [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+═══════════════════════════════
+♪ The crystal ball sees all ♪
+♫ Your web features standing tall ♫  
+♪ Baseline magic, hear the call ♪
+♫ Crystal-Line Base-Ball! ♫
+═══════════════════════════════
