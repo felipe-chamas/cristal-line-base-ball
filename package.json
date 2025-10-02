@@ -2,7 +2,7 @@
   "name": "crystal-line-base-ball",
   "displayName": "Crystal-Line Base-Ball 🔮⚾",
   "description": "🎯 Real-time Baseline compatibility detector for CSS, HTML & JavaScript features. Choose between gutter icons or text highlighting. Get architecture insights, browser support timelines, and pro developer tips with hover tooltips. Supports bleeding-edge experimental features to cutting-edge APIs. Perfect for teams building modern web applications who need to understand feature compatibility at a glance.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.104.0"
