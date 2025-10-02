@@ -1,5 +1,5 @@
 /* 
-🎨🔮 Hanami & Philip's CSS Time Machine 🔮🎨
+🎨🔮 TI Chama's CSS Time Machine 🔮🎨
 Journey from today's web to tomorrow's magic!
 Hover over ANY property to see its compatibility timeline 📖✨
 */
@@ -31,10 +31,10 @@ Hover over ANY property to see its compatibility timeline 📖✨
 .native-nesting {
   /* 🪆 Hover over CSS nesting - SCSS is built-in now! */
   color: blue;
-  
+
   .nested-child {
     color: red;
-    
+
     &:hover {
       color: purple;
     }
@@ -45,7 +45,7 @@ Hover over ANY property to see its compatibility timeline 📖✨
 .layer-control {
   /* 📚 Hover over '@layer' - tame the cascade! */
   @layer base, components, utilities;
-  
+
   @layer components {
     background: blue;
   }
@@ -56,10 +56,10 @@ Hover over ANY property to see its compatibility timeline 📖✨
 .container-aware {
   container-type: inline-size;
   /* 📐 Hover over 'container-query-units' - cqw, cqh magic! */
-  
+
   .responsive-content {
     font-size: 4cqw; /* Container query width unit! */
-    padding: 2cqh;   /* Container query height unit! */
+    padding: 2cqh; /* Container query height unit! */
     /* Units that know their container's size, not the viewport! */
   }
 }
@@ -67,9 +67,9 @@ Hover over ANY property to see its compatibility timeline 📖✨
 /* 🌍 GLOBAL WEB - Logical Properties */
 .international-friendly {
   /* 🌍 Hover over 'logical-properties' - writing-mode aware! */
-  margin-inline-start: 1rem;  /* Start of reading direction */
-  padding-block-end: 2rem;    /* End of block direction */
-  border-inline: 1px solid;   /* Inline borders */
+  margin-inline-start: 1rem; /* Start of reading direction */
+  padding-block-end: 2rem; /* End of block direction */
+  border-inline: 1px solid; /* Inline borders */
   /* Works in RTL, vertical text, any writing mode! */
 }
 
@@ -77,10 +77,10 @@ Hover over ANY property to see its compatibility timeline 📖✨
 .grid-master {
   /* ✅ Hover over 'grid' - the mature layout champion */
   display: grid;
-  grid-template-areas: 
-    "header header"
-    "sidebar main"
-    "footer footer";
+  grid-template-areas:
+    'header header'
+    'sidebar main'
+    'footer footer';
 }
 
 .flex-dancer {
@@ -104,6 +104,6 @@ Each property tells a story of web evolution:
 - ⚠️ Fresh arrivals (limited support)  
 - ✅ Trusted friends (baseline ready)
 
-Made with 💖 by Hanami Code & Philip
+Made with 💖 by TI Chamas
 for developers building tomorrow's web today! 🚀
 */

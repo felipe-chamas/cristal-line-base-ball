@@ -32,6 +32,7 @@ A VS Code extension that provides instant visual feedback about web feature comp
 ## Extension Settings
 
 Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+
 ## 🛠️ Built With
 
 TypeScript, VS Code Extension API, Node.js, ESBuild, ESLint, Mocha, SVG Graphics, Regex Pattern Matching, JSON Configuration, Git/GitHub, CSS/HTML/JavaScript Feature Detection
@@ -39,14 +40,16 @@ TypeScript, VS Code Extension API, Node.js, ESBuild, ESLint, Mocha, SVG Graphics
 ## 📦 Installation
 
 ### From VS Code Marketplace
+
 1. Open VS Code
 2. Go to Extensions (`Ctrl+Shift+X`)
 3. Search for "Crystal-Line Base-Ball"
 4. Click Install
 
 ### From Source
+
 ```bash
-git clone https://github.com/hanami-philip/crystal-line-base-ball.git
+git clone https://github.com/ti-chamas/crystal-line-base-ball.git
 cd crystal-line-base-ball
 npm install
 npm run compile
@@ -55,6 +58,7 @@ npm run compile
 ## 🎮 Usage Examples
 
 ### CSS Features
+
 ```css
 /* Grid Layout - Widely supported ✅ */
 .container {
@@ -65,7 +69,7 @@ npm run compile
 /* CSS Nesting - Limited support ⚠️ */
 .card {
   background: white;
-  
+
   &:hover {
     transform: scale(1.05);
   }
@@ -80,6 +84,7 @@ npm run compile
 ```
 
 ### HTML Features
+
 ```html
 <!-- Dialog Element - Widely supported ✅ -->
 <dialog open>
@@ -87,23 +92,22 @@ npm run compile
 </dialog>
 
 <!-- Popover API - Experimental 🧪 -->
-<div popover="auto" id="my-popover">
-  Popover content
-</div>
+<div popover="auto" id="my-popover">Popover content</div>
 ```
 
 ### JavaScript Features
+
 ```javascript
 // Optional Chaining - Widely supported ✅
-const value = obj?.property?.nested;
+const value = obj?.property?.nested
 
 // Private Fields - Limited support ⚠️
 class MyClass {
-  #privateField = 'secret';
+  #privateField = 'secret'
 }
 
 // Temporal API - Experimental 🧪 */
-const now = Temporal.Now.instant();
+const now = Temporal.Now.instant()
 ```
 
 ## ⚙️ Configuration
@@ -138,21 +142,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Try It Out
 
-- **VS Code Marketplace**: [Crystal-Line Base-Ball](https://marketplace.visualstudio.com/items?itemName=hanami-philip.crystal-line-base-ball)
-- **GitHub Repository**: [hanami-philip/crystal-line-base-ball](https://github.com/hanami-philip/crystal-line-base-ball)
-- **Report Issues**: [GitHub Issues](https://github.com/hanami-philip/crystal-line-base-ball/issues)
+- **VS Code Marketplace**: [Crystal-Line Base-Ball](https://marketplace.visualstudio.com/items?itemName=ti-chamas.crystal-line-base-ball)
+- **GitHub Repository**: [ti-chamas/crystal-line-base-ball](https://github.com/ti-chamas/crystal-line-base-ball)
+- **Report Issues**: [GitHub Issues](https://github.com/ti-chamas/crystal-line-base-ball/issues)
 
 ---
 
 Made with 🔮 and ⚾ for the modern web
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
+- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
+- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
 
 ## For more information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
